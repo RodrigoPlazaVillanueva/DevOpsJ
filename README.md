@@ -1,3 +1,3 @@
 ```bash
-$ comando_a_copiar
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
