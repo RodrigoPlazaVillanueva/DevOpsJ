@@ -20,6 +20,48 @@ Antes de comenzar, asegúrate de tener los siguientes requisitos previos instala
 
    ```shell
    composer install
+   ```
 
-      ```shell
+4. Copia el archivo de configuración `.env.example` y renómbralo como `.env`. Puedes hacerlo con el siguiente comando:
+
+   ```shell
+   cp .env.example .env
+   ```
+
+5. Genera una clave de aplicación única ejecutando el siguiente comando:
+
+   ```shell
    php artisan key:generate
+   ```
+
+6. Configura la base de datos en el archivo `.env` con los detalles de tu entorno de desarrollo. Asegúrate de tener una base de datos creada y accesible.
+
+7. Ejecuta las migraciones de la base de datos para crear las tablas necesarias. Utiliza los siguientes comandos:
+
+   ```shell
+   php artisan migrate
+   ```
+
+8. Ejecuta el siguiente comando para instalar las dependencias de JavaScript:
+
+   ```shell
+   npm install
+   ```
+
+9. Compila los activos de JavaScript y CSS utilizando Laravel Mix. Utiliza el siguiente comando:
+
+   ```shell
+   npm run dev
+   ```
+
+10. Inicia el servidor de desarrollo de Laravel. Utiliza el siguiente comando:
+
+    ```shell
+    php artisan serve
+    ```
+
+11. Abre tu navegador web y accede a `http://localhost:8000`. Deberías ver la página de inicio de Laravel.
+
+12. Para acceder al panel de administración de AdminLTE, visita `http://localhost:8000/admin`.
+
+¡Eso es todo! Ahora tienes un entorno de programación de Laravel con AdminLTE configurado y listo para su uso. Puedes comenzar a desarrollar tu aplicación web utilizando Laravel y aprovechar las características y el diseño proporcionados por AdminLTE.
